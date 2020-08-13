@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Canvas Graph</title>
+  </head>
+  <body onload="draw();">
+    <div id="root">
+      <canvas width="755" height="430" id="canvas"></canvas>
+      <div class="btns">
+        <div></div>
+        <div class="btns__arrows">
+          <button class="btn__prev">
+            <span class="display-none">prev</span>
+          </button>
+
+          <span class="btns__page"></span>
+
+          <button class="btn__next">
+            <span class="display-none">next</span>
+          </button>
+        </div>
+
+        <button class="btn__repeat">
+          <span>Restart</span>
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
