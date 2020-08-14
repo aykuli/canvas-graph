@@ -6,24 +6,26 @@
     <link rel="stylesheet" href="style.css" />
     <title>Canvas Graph</title>
   </head>
-  <body onload="draw();">
+  <body onload="draw()">
     <div id="root">
       <canvas width="755" height="430" id="canvas"></canvas>
       <div class="btns">
         <div></div>
         <div class="btns__arrows">
-          <button class="btn__prev">
+          <button class="btn__prev" onclick="draw()">
             <span class="display-none">prev</span>
           </button>
 
-          <span class="btns__page"></span>
+          <span>
+            <span class="btns__page"></span>/2
+          </span>
 
-          <button class="btn__next">
+          <button class="btn__next" onclick="animation()">
             <span class="display-none">next</span>
           </button>
         </div>
 
-        <button class="btn__repeat">
+        <button class="btn__restart" onclick="draw()">
           <span>Restart</span>
         </button>
       </div>
